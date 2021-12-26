@@ -1,0 +1,58 @@
+﻿@model IEnumerable<MovieCave.Models.Movies>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+                <div class="container px-0">
+                    <div class="row gx-5 align-items-center justify-content-center bg-dark">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white text-center mb-2"> </h1>
+                                <p class="lead fw-normal text-white-50 text-center mb-4">Yakın zamanda gelmesi planlanan filmler.</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-center">
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Hakkında</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="https://www.dreadcentral.com/wp-content/uploads/2019/07/Doctor-Strange-2-Movie-Multiverse-Of-Madness-banner.jpg" alt="..." /></div>
+                    </div>
+                </div>
+               <br /><br /><br />
+    <div class="row gx-5 justify-content-center">
+        <div class="row gx-5">
+    @foreach (var item in Model)
+    {
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <a href="../Movies/Details/@Html.DisplayFor(modelItem => item.Id)">
+                                <img class="card-img-top" src="./images/@Html.DisplayFor(modelItem => item.Banner)" alt="..." />
+                                </a>
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Filmler</div>
+                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">@Html.DisplayFor(modelItem => item.MovieName)</h5></a>
+                                    <p class="card-text mb-0">@Html.DisplayFor(modelItem => item.Subject)</p>
+                                </div>
+            
+                            </div>
+                        </div>
+        
+    }             
+                    <!-- Call to action-->
+                    <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+                        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                            <div class="mb-4 mb-xl-0">
+                                <div class="fs-3 fw-bold text-white">Yeni filmlerin haberi için kayıt ol.</div>
+                                <div class="text-white-50">Sign up for our newsletter for the latest updates.</div>
+                            </div>
+                            <div class="ms-xl-4">
+                                <div class="input-group mb-2">
+                                    <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
+                                    <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up</button>
+                                </div>
+                                <div class="small text-white-50">Güvenliğine önem veriyoruz.</div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+             </div>

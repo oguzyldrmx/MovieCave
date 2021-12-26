@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MovieCave.Models.Movies>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@foreach (var item in Model) {
+    <section class="py-5 bg-light" id="scroll-target">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6"> 
+                            <a href="../Movies/Details/@Html.DisplayFor(modelItem => item.Id)">
+                                <img class="img-fluid rounded mb-5 mb-lg-0 " width="600" height="800" src="./images/@Html.DisplayFor(modelItem => item.Banner)" alt="..." />
+                                </a>
+                                </div>
+                        <div class="col-lg-6">
+                            <div class = "embed-responsiver embed-responsive-16by9">
+                                <iframe width="560" height="315" src="@Html.DisplayFor(modelItem => item.Trailer)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <br/>
+                            <h2 class="fw-bolder">@Html.DisplayFor(modelItem => item.MovieName)</h2>
+                            <p class="lead fw-normal text-muted mb-0">@Html.DisplayFor(modelItem => item.Subject)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+}
