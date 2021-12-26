@@ -146,7 +146,6 @@ C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Categories\Details.cshtml.g.c
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Categories\Edit.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Categories\Index.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Movies\Index.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs

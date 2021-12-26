@@ -78,7 +78,7 @@ namespace MovieCave.Areas.Identity.Pages.Account
                 var result = await _userManager.CreateAsync(IdentityUser, Input.Password);
                 if (result.Succeeded)
                 {
-                    _userManager.AddToRoleAsync(IdentityUser, "Admin").Wait();
+                    _userManager.AddToRoleAsync(IdentityUser, "User").Wait();
                     _logger.LogInformation("User created a new account with password.");
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(IdentityUser);
