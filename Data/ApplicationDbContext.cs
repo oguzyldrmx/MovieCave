@@ -15,5 +15,6 @@ namespace MovieCave.Data
         }
         public DbSet<Categories> Categories { get; set; }
         public DbSet<Movies> Movies { get; set; }
+        public DbSet<SiteRole> SiteRole { get; set; }
     }
 }

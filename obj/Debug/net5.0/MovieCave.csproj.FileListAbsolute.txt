@@ -140,7 +140,6 @@ C:\Projeler\MovieCave\obj\Debug\net5.0\staticwebassets\MovieCave.StaticWebAssets
 C:\Projeler\MovieCave\obj\Debug\net5.0\MovieCave.TagHelpers.input.cache
 C:\Projeler\MovieCave\obj\Debug\net5.0\MovieCave.TagHelpers.output.cache
 C:\Projeler\MovieCave\obj\Debug\net5.0\MovieCave.RazorCoreGenerate.cache
-C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Categories\Create.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Categories\Delete.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Categories\Details.cshtml.g.cs
@@ -171,12 +170,14 @@ C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Movies2\Index.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Movies\Details.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Movies3\Details.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Movies3\Index.cshtml.g.cs
+C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Views\Role\Create.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
-C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
-C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
-C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
-C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
 C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Projeler\MovieCave\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
