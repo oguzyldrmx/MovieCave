@@ -219,6 +219,35 @@ namespace MovieCave.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("MovieCave.Models.ArticleComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Comments")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MoviesId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("PushlishedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MoviesId");
+
+                    b.ToTable("ArticleComment");
+                });
+
             modelBuilder.Entity("MovieCave.Models.Categories", b =>
                 {
                     b.Property<int>("Id")
@@ -242,7 +271,6 @@ namespace MovieCave.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Banner")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("CategoriesId")
@@ -318,6 +346,15 @@ namespace MovieCave.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("MovieCave.Models.ArticleComment", b =>
+                {
+                    b.HasOne("MovieCave.Models.Movies", "Movies")
+                        .WithMany("ArticlesComments")
+                        .HasForeignKey("MoviesId");
+
+                    b.Navigation("Movies");
+                });
+
             modelBuilder.Entity("MovieCave.Models.Movies", b =>
                 {
                     b.HasOne("MovieCave.Models.Categories", "Categories")
@@ -325,6 +362,11 @@ namespace MovieCave.Data.Migrations
                         .HasForeignKey("CategoriesId");
 
                     b.Navigation("Categories");
+                });
+
+            modelBuilder.Entity("MovieCave.Models.Movies", b =>
+                {
+                    b.Navigation("ArticlesComments");
                 });
 #pragma warning restore 612, 618
         }

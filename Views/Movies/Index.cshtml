@@ -5,8 +5,10 @@
 }
 
 @foreach (var item in Model) {
-    <section class="py-5 bg-light" id="scroll-target">
-                <div class="container px-5 my-5">
+    if (item.Year <= 2021)
+    {
+        <section class="py-5 bg-light" id="scroll-target">
+            <div class="container px-5 my-5">
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6"> 
                             <a href="../Movies/Details/@Html.DisplayFor(modelItem => item.Id)">
@@ -24,4 +26,5 @@
                     </div>
                 </div>
             </section>
+   }
 }

@@ -29,7 +29,5 @@ namespace MovieCave.Models
 
         //[ForeignKey("CategoryId")]
         public Categories Categories { get; set; }
-
-        public ICollection<ArticleComment> ArticlesComments { get; set; }
     }
 }
